@@ -27,9 +27,9 @@ public class Prestamo {
     private Calendar fechaPrestamo;
     @Temporal(TemporalType.DATE)
     private Calendar fechaDevolucion;
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne
     private Libro libro;
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne
     private Cliente cliente;
 
     public Prestamo() {

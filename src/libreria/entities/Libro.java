@@ -24,10 +24,10 @@ public class Libro {
     private Integer ejemplaresRestantes;
     private Boolean alta;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne
     private Autor autor;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne
     private Editorial editorial;
 
     public Libro() {
