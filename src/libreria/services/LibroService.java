@@ -15,7 +15,7 @@ public class LibroService {
 
         int anioActual = LocalDate.now().getYear();
 
-        if (libro.getIsbn() == null || libro.getIsbn() < 0) {
+        if (libro.getIsbn() == null || libro.getIsbn() < 0 || String.valueOf(libro.getIsbn()).length() != 13) {
             throw new Exception("Ingresaste un ISBN nulo o invalido");
         }
 
